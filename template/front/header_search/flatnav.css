@@ -1,0 +1,131 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+* {
+	margin: 0; 
+	padding: 0;
+}
+
+.nav_search {
+	background: #fff;
+	height: 40px;
+	display: inline-block;
+	border:1px solid #e1e5ea;
+}
+
+.nav_search li {
+	float: left;
+	list-style-type: none;
+	position: relative;
+}
+
+.nav_search li a {
+	font-size: 16px; 
+	color: black;
+	display: block;
+	line-height: 40px;
+	padding: 0 26px;
+	text-decoration: none;
+	border-left: 1px solid #2e2e2e;
+	text-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+}
+.nav_search li a:hover {
+	background-color: #fff;
+	border:1px solid #e1e5ea;
+}
+
+#settings a {
+	padding: 18px;
+	height: 24px;
+	font-size: 10px;
+	line-height: 24px;
+}
+
+#search_header {
+	width: 552px;
+	margin: 4px;
+}
+.search_header_text{
+	width: 480px;
+	padding: 15px 0 15px 20px;
+	position:relative;
+	font-size: 16px;
+	border: 0 none;
+	height: 32px;
+	margin-right: 0;
+	color: black;
+	outline: none;
+	float: left;
+	box-sizing: border-box;
+	transition: all 0.15s;
+	background-color: #fff;
+	border:1px solid #E6E6E6;
+	border-radius:20px 0px 0px 20px;
+	-webkit-transition: border-color .3s;
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+	color: black;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	color: black;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+	color: black;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+	color: black;
+}
+.search_header_text:focus {
+	border-color:#000;
+}
+.search_header_text:hover {
+	border-color:#8dc9e5;
+}
+.search_header_button {
+	border: 0 none;
+	width: 72px; 
+	float: left;
+	padding: 0;
+	text-align: center;
+	height: 32px;
+	cursor: pointer;
+	color:white;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#45484d+19,000000+62 */
+background: #45484d; /* Old browsers */
+background: -moz-linear-gradient(-45deg,  #45484d 19%, #000000 62%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  #45484d 19%,#000000 62%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  #45484d 19%,#000000 62%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+#options_header a{
+	border-left: 0 none;
+}
+#options_header>a {
+	background-image: url(triangle.png);
+	background-position: 85% center;
+	background-repeat: no-repeat;
+	padding-right: 42px;
+}
+.subnav_search {
+	visibility: hidden;
+	position: absolute;
+	top: 110%;
+	right: 0;
+	width: 200px;
+	height: auto;
+	opacity: 0;
+	transition: all 0.1s;
+	background: #fff;
+	border:1px solid #e1e5ea;
+}
+.subnav_search li {
+	float: none;
+}
+.subnav_search li a {
+	border-bottom: 1px solid #e1e5ea;
+}
+#options_header:hover .subnav_search {
+	visibility: visible;
+	top: 100%;
+	opacity: 1;
+}
